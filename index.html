@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-widht, initial-scale=1.0">
+<link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
+<title> Página web de Letther</title>
+</head>
+<body> 
+    <h3 id="inicio"> Lista Ordenada (Ej: Lista de pasos a seguir)</h3>
+    <ol type="a"> <!-- Ordered List --> 
+        <li> Instalar Metamask</li>
+        <li> Creamos una "wallet" (también conocida como ID)</li>
+        <li> Conectamos con letther.io</li>
+    </ol>
+
+<h3> Listas no Ordenadas (Ej. Lista de ventajas Web3)</h3>
+<ul> <!--Unordered List --> 
+    <li> Ownership de los contenidos</li>
+    <li> Trazabilidad </li>
+    <li> Coordinación entre pares </li>
+</ul>
+
+<ul>
+    <li>Ethereum</li>
+    <li>Blockchain</li>
+    <li>Decentraland</li>
+    <li>Media Party</li>
+    <li>ICFJ</li>
+    <li>Letther</li>
+    <li>Conferencia de innovación en medios</li>
+    <li>Tecnología</li>
+    <li>Internet</li>
+    <li>Diseño</li>
+</ul>
+<!--ol>li*5 + TAB Atajo para crear listas ordenadas con items rápido -->
+
+<ol>
+    <li>Figma</li>
+    <li>Visual Studio Code</li>
+    <li>Prueba</li>
+    <li>de</li>
+    <li>Lista</li>
+</ol>
+
+<h3> Lista de Definición: Tiene un concepto y nos dice cual sería la definición del mismo. Sangria (Concepto . Definición)</h3>
+
+<dl> <!--Defiintion List-->
+    <dt>Blockchain</dt>
+    <dd>Blockchain es una tecnología de registro distribuido que permite almacenar y compartir información de forma segura, transparente y descentralizada. Se basa en una red de nodos interconectados que trabajan juntos para validar y registrar transacciones en bloques de información enlazados entre sí de manera cronológica. Cada bloque contiene un hash que lo identifica de manera única y enlaza con el bloque anterior, lo que hace que sea muy difícil de alterar la información que se encuentra en ellos. Debido a estas características, blockchain se utiliza principalmente en aplicaciones que requieren transacciones seguras y transparentes, como la criptomoneda, la gestión de la cadena de suministro, los contratos inteligentes, la votación electrónica, entre otras. </dd>
+
+</dl>
+
+<hr> 
+
+<h3> Tablas </h3>
+
+<table border="5" cellpadding="20px" cellspacing="20px"> 
+    <th>User</th> <!--table head "encabezado"-->
+    <th>Tema en el que se especializa</th>
+    <th>Certificados de reputación obtenidos </th> 
+    <th>Certificados de reputación que dió </th>
+    
+    <tr> <!-- table row - filas--> 
+    <td>Cala</td> <!--table data - información -->
+    <td>Diseño</td>
+    <td>24</td>
+    <td>5</td>
+    </tr>
+    
+    <tr>
+        <td>Fiona</td>
+        <td>Informática</td>
+        <td>14</td>
+        <td>3</td>
+    </tr>
+
+</table>
+
+<hr> 
+
+<h3> Formularios </h3>
+
+<form>
+    <label for="Nombre"> Nombre</label>
+    <input type="text" placeholder="Ingrese su nombre" name="nombre">
+    <br>
+    <label for="email">Correo</label>
+    <input type="email" placeholder="Ingrese su email"name="email">
+    <br>
+    <label for="password">Contraseña</label>
+    <input type="password" placeholder="Ingrese su contraseña"name="password">
+    <br>
+
+    <textarea name="ID"> </textarea>
+
+    <br>
+    <!--RADIO - ELEGIR UNA SOLA OPCIÓN-->
+<label for="genero">Ingrese su género</label>
+<input type="radio"value="fem" name="genero">Femenino
+<input type="radio"value="mas"name="genero">Masculino   
+<input type="radio"value="pne"name="genero">Prefiero no espeficifar
+
+<!-- CHECKBOX --Varias opcioness-->
+<input type="check"value="1">Acepta los términos
+<input type="check" value="2">Acepta que le enviemos el email 
+
+<br> 
+<!--Menu desplegable--> 
+
+<label for="pais"> Ingrese su país</label>
+<select name="pais"> 
+<option value="arg">Argentina </option>
+<option value="uru">Uruguay </option>
+<option value="chi">Chile </option>
+
+</select>
+
+<!--Conjunto de campos-->
+
+<fieldset>
+    <legend>Niveles de reputación</legend>
+    <select name="" id="">
+
+        <option value="int">Intermedio</option>
+        <option value="pri">Principiante</option>
+        <option value="ava">Avanzado </option>
+    </select>
+</fieldset>
+
+<br> 
+
+
+    <!--Botones-->
+    <!-- Boton enviar-->
+    <input type="submit" value="Enviar el formulario"> 
+    <!--Boton resetear-->
+    <input type="reset" value="Elimina todo">
+    <!--Boton que no hace nada pero sirve para Js-->
+    <input type="button" value="No hago nada">
+
+</form>
+
+<hr> 
+<!--Enlaces-->
+<!--Enlaces relativos -- Pagina o archivo del mismo proyecto-->
+
+<a href="pagina/contacto.html">Pagina contacto</a>
+
+<!--Enlaces ABSOLUTOS --A documentos o sitios FUERA del proyecto-->
+
+<a href="https://chat.openai.com/chat"target="_blank"> Ir a ChatGPT</a>
+
+<!--Enlace INTERNO--A una parte del documento, se accede a través del ID-->
+<a href="#inicio">Volver al inicio</a>
+
+<hr> 
+<!--Multimedia en HTML, mejora la UX-->
+<h3>Imagenes</h3>
+<img src="multimedia/logo.png" alt="logo pero es fondo"> <!--src =source ruta de donde saca la imagen-->
+                                                        <!--alt- texto alternativo, para cuadno la imagen no carga o mala ruta, alt aparece diciendo que está. Descripción de la imagen, también para la gente que usa comando de voz. El alt tiene que decir GATO; y lo dice el comando de voz. -->
+
+<!--Favicon: es link:favicon-->
+
+<hr> 
+<h3>YouTube</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h3>Google Maps - Centro Cultural Recoleta</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9290.887309632131!2d-58.3953445061391!3d-34.583301678283924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa24c8efcad%3A0x4a52ca8190703ddc!2sCentro%20Cultural%20Recoleta!5e0!3m2!1sen!2sar!4v1676612419640!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<h3>Spotify</h3>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5O11BucWtoFoFxFIgtrjBD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</body>
+
+</html>
